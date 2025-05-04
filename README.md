@@ -21,37 +21,37 @@ This script monitors two text files for new lines and sends those lines as messa
 ```bash
 git clone https://github.com/your-username/telegram-sender-template.git
 cd telegram-sender-template
-2. Install the required dependencies:
-bash
-Copy
-Edit
+
+### 2. Install the required dependencies:
+
+
+```bash
 pip install requests
-3. Update the script with your Telegram bot token and chat ID:
+
+### 3. Update the script with your Telegram bot token and chat ID:
 Replace the following placeholders in the script with your actual values:
 
 TELEGRAM_BOT_TOKEN: Your bot token from BotFather.
 
 TELEGRAM_CHAT_ID: Your Telegram channel or group chat ID (can be obtained from your bot or a Telegram group chat).
 
-python
-Copy
-Edit
+```bash
 TELEGRAM_BOT_TOKEN = "Your bot token here"
 TELEGRAM_CHAT_ID = "Your channel/group ID here"
-4. Customize the file names:
+
+### 4. Customize the file names:
 In the script, you can adjust the FILE_1 and FILE_2 variables to reflect the names of the text files you want to monitor.
 
-python
-Copy
-Edit
+```bash
 FILE_1 = "file1.txt"
 FILE_2 = "file2.txt"
-5. Run the script:
-bash
-Copy
-Edit
+
+### 5. Run the script:
+
+```bash
 python telegram_sender_template.py
-The script will start running and check the files every 15 minutes. Any new lines added to the files will be sent as messages to your specified Telegram chat.
+
+### The script will start running and check the files every 15 minutes. Any new lines added to the files will be sent as messages to your specified Telegram chat.
 
 How It Works
 The script reads lines from the two specified text files (file1.txt and file2.txt).
@@ -80,9 +80,3 @@ Any new lines will be sent to the Telegram chat you specified.
 
 License
 This project is licensed under the MIT License - see the LICENSE file for details.
-
-csharp
-Copy
-Edit
-
-Simply copy and paste this content into a `README.md` file in your GitHub repository!
